@@ -13,21 +13,20 @@ export default function Home({ posts }: HomeProps) {
     <div className="min-h-screen bg-white">
       <main className="max-w-4xl mx-auto px-4 py-8">
         <header className="mb-12">
-          <h1 className="text-4xl font-bold mb-4">Jubil.ee</h1>
        
-    <p><span class="askii">..</span>_________ </p> 
-    <p><span class="askii">.</span>/ /_||_|_\\  <span class="askii">..</span> \o  <span class="askii">....</span> o/  </p> 
-    <p>( <span class="askii">...</span>_  <span class="askii">..</span>_ _\<span class="askii">...</span> |\ o/ /|  </p>
-    <p><span class="askii">.</span>=`(_)---(_)-'<span class="askii">.</span> / \ /\ / \  </p>
+    <p><span className="askii">..</span>_________ </p> 
+    <p><span className="askii">.</span>/ /_||_|_\\  <span className="askii">..</span> \o  <span className="askii">....</span> o/  </p> 
+    <p>( <span className="askii">...</span>_  <span className="askii">..</span>_ _\<span className="askii">...</span> |\ o/ /|  </p>
+    <p><span className="askii">.</span>=`(_)---(_)-`<span className="askii">.</span> / \ /\ / \  </p>
 
    <p>
-   <span class="askii">...........</span> Calvin Arthur Eileen
+   <span className="askii">...........</span> Calvin Arthur Eileen
    </p>
    
 
 
 <p>
-            The Jubilee's are on the move! Welcome to our home on the internet.
+            The Jubilee&apos;s are on the move! Welcome to our home on the internet.
           </p>
         </header>
 

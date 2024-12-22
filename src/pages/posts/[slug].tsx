@@ -3,8 +3,6 @@ import { ParsedUrlQuery } from 'querystring';
 import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { tomorrow } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { BlogPost } from '../../types/blog';
 import { getAllPosts, getPostBySlug } from '../../utils/posts';
 
@@ -22,7 +20,7 @@ export default function Post({ post }: PostProps) {
       <div className="max-w-4xl mx-auto px-4 py-8">
         <h1 className="text-2xl font-bold">Post not found</h1>
         <Link href="/" className="text-blue-600 hover:text-blue-800">
-          ← Jubil.ee
+          ← Home
         </Link>
       </div>
     );
@@ -35,7 +33,7 @@ export default function Post({ post }: PostProps) {
           href="/"
           className="inline-flex items-center text-blue-600 hover:text-blue-800 mb-8"
         >
-          ← Jubil.ee
+          ← Home
         </Link>
         
         <header className="mb-8">
