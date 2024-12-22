@@ -26,7 +26,7 @@ export default function Home({ posts }: HomeProps) {
 
 
 <p>
-            The Jubilee&apos;s are on the move! Welcome to our home on the internet.
+            The Jubilees are on the move! Welcome to our home on the internet.
           </p>
         </header>
 
