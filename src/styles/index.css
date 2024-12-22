@@ -1,0 +1,31 @@
+root {
+    --primary-color: #2563eb;
+    --primary-hover: #1d4ed8;
+    --text-color: #111827;
+    --text-light: #6b7280;
+    --background: #ffffff;
+    --background-alt: #f9fafb;
+    --border-color: #e5e7eb;
+    --spacing-small: 0.5rem;
+    --spacing-medium: 1rem;
+    --spacing-large: 2rem;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: monospace;
+    line-height: 1.6;
+    color: var(--text-color);
+    background: var(--background);
+    padding: var(--spacing-medium);
+  }
+
+  .askii {
+    color: white
+  }
+  
