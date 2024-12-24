@@ -28,7 +28,7 @@ export default function Post({ post }: PostProps) {
   }
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="blog">
       <article className="max-w-4xl mx-auto px-4 py-8">
         <Link 
           href="/"
@@ -48,7 +48,11 @@ export default function Post({ post }: PostProps) {
               })}
             </time>
           </div>
-          <p className="text-gray-600 text-lg">{post.description}</p>
+          <div>
+            <h3>Stay in touch</h3>
+            <p>Welcome to our blog, your best source of information about the Jubilees. Stay tuned for updates, and sign up for our mailing list.</p>
+            <EmailSignup />
+          </div>
         </header>
 
         <div className="prose prose-lg max-w-none">

@@ -42,7 +42,6 @@ export default function EmailSignup() {
 
   return (
     <div className="email-signup">
-      <h3>Get updates</h3>
       
       {status === 'success' ? (
         <div className="success-message">

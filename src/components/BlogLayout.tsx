@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import EmailSignup from './EmailSignup';
 
 interface BlogPost {
   title: string;
@@ -23,7 +22,7 @@ const BlogLayout: React.FC<Props> = ({ posts }) => {
   );
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
+    <div className="blog">
       {!selectedPost ? (
         <>
           <h1 className="text-4xl font-bold mb-8">My Blog</h1>
@@ -62,9 +61,6 @@ const BlogLayout: React.FC<Props> = ({ posts }) => {
           >
             {selectedPost.content}
           </ReactMarkdown>
-        </div>
-        <div>
-            <EmailSignup />
         </div>
         </>
       )}
