@@ -5,6 +5,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { BlogPost } from '../../types/blog';
 import { getAllPosts, getPostBySlug } from '../../utils/posts';
+import EmailSignup from '@/src/components/EmailSignup';
 
 interface PostProps {
   post: BlogPost;
@@ -56,6 +57,9 @@ export default function Post({ post }: PostProps) {
           >
             {post.content}
           </ReactMarkdown>
+        </div>
+        <div>
+            <EmailSignup />
         </div>
       </article>
     </div>

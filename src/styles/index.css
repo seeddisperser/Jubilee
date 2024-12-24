@@ -28,4 +28,16 @@ root {
   .askii {
     color: white
   }
+
+  html {
+    padding: 8px;
+  }
+
+  button {
+    font-family: monospace;
+  }
+
+  input {
+    font-family: monospace;
+  }
   

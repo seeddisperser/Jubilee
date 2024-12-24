@@ -1,5 +1,3 @@
-// src/types/blog.ts
-
 // For the frontmatter metadata in markdown files
 export interface BlogPostFrontmatter {
   // Required fields
@@ -37,6 +35,13 @@ export interface BlogPostResponse {
   nextPost?: Pick<BlogPost, 'title' | 'slug' | 'date'>;
 }
 
+// Email Signup
+export interface EmailSignupProps {
+  email: string;
+  status: string;
+  onSubmit?: string;
+}
+
 // For listing/preview purposes
 export type BlogPostPreview = Pick<BlogPost, 
   'title' | 
@@ -48,3 +53,5 @@ export type BlogPostPreview = Pick<BlogPost,
   'excerpt' |
   'readingTime'
 >;
+
+
