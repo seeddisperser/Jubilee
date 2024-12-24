@@ -37,6 +37,7 @@ export interface Subscriber {
   status: 'active' | 'unsubscribed' | 'pending';
   verification_token?: string;
   verified_at?: string;
+  error?: string;
 }
 
 // Utility functions for managing subscribers
@@ -56,7 +57,8 @@ export async function addSubscriber(email: string): Promise<Subscriber> {
     );
     
     return subscriber!;
-  } catch (error: unknown) {
+    // eslint-disable-next-line
+  } catch (error: any) {
     if (error.code === 'SQLITE_CONSTRAINT') {
       throw new Error('This email is already subscribed');
     }
@@ -73,8 +75,9 @@ export async function verifySubscriber(token: string): Promise<boolean> {
      WHERE verification_token = ? AND status = 'pending'`,
     [token]
   );
+
   
-  return result.changes > 0;
+  return (result.changes as number) > 0;
 }
 
 export async function unsubscribe(email: string): Promise<boolean> {
@@ -85,5 +88,5 @@ export async function unsubscribe(email: string): Promise<boolean> {
     [email]
   );
   
-  return result.changes > 0;
+  return (result.changes as number) > 0;
 }

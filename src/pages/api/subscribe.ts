@@ -48,7 +48,7 @@ export default async function handler(
     return res.status(200).json({ 
       message: 'Successfully subscribed' 
     });
-
+// eslint-disable-next-line
   } catch (error: any) {
     // Handle unique constraint violation
     if (error.code === 'SQLITE_CONSTRAINT') {
