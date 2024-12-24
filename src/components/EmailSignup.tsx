@@ -46,7 +46,7 @@ export default function EmailSignup() {
       
       {status === 'success' ? (
         <div className="success-message">
-          Thanks for subscribing! Please check your email to confirm.
+          Thanks for subscribing!
         </div>
       ) : (
         <form onSubmit={handleSubmit}>
