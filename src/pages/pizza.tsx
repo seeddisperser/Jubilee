@@ -1,4 +1,3 @@
-import EmailSignup from "../components/EmailSignup"
 import Rsvp from "../components/Rsvp"
 
 
@@ -10,6 +9,10 @@ export default function Pizza() {
         <h1>Weekly Pizza Night</h1>
         <p>Join us for homemade pizza and good company!</p>
         <div className="pizza-animation">🍕</div>
+        <div className="pizza-animation">🌽</div>
+        <div className="pizza-animation">🥗</div>
+        <div className="pizza-animation">🥙</div>
+        <div className="pizza-animation">🍖</div>
     </header>
    
     <div className="date-banner">
@@ -45,7 +48,7 @@ export default function Pizza() {
     </div>
    
     <div>
-        <h2>Let Us Know You're Coming!</h2>
+        <h2>Let Us Know You&apos;re Coming!</h2>
         <Rsvp />
     </div>
    
