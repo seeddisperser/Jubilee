@@ -42,6 +42,13 @@ export interface EmailSignupProps {
   onSubmit?: string;
 }
 
+//Rsvp
+export interface RsvpProps {
+  name: string;
+  status: string;
+  onSubmit?: string;
+}
+
 // For listing/preview purposes
 export type BlogPostPreview = Pick<BlogPost, 
   'title' | 
