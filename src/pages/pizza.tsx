@@ -21,7 +21,7 @@ export default function Pizza() {
    
     <div className="info-section">
         <h2>Location</h2>
-        <p> Megan's House </p>
+        <p> Megan&apos;s House </p>
         <p> Obstruction Pass - Contact for address</p>
     </div>
    
