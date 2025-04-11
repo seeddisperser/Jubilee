@@ -6,8 +6,8 @@ export default function Pizza() {
         <>
     
     <header>
-        <h1>Weekly Pizza Night</h1>
-        <p>Join us for homemade pizza and good company!</p>
+        <h1>Today, 4/11, Pizza Night is cancelled due to illness</h1>
+        <p>Next week Megan is hosting, and the Jubilees will depart OI on the 23rd until the Fall</p>
         <div className="pizza-animation">🍕</div>
         <div className="pizza-animation">🌽</div>
         <div className="pizza-animation">🥗</div>
@@ -21,8 +21,8 @@ export default function Pizza() {
    
     <div className="info-section">
         <h2>Location</h2>
-        <p>40 D Adele Ln Eastsound </p>
-        <p>Next to Ace Hardware, Cottage D</p>
+        <p> Megan's House </p>
+        <p> Obstruction Pass - Contact for address</p>
     </div>
    
     <div className="info-section">
