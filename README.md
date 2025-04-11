@@ -1,6 +1,6 @@
 ## Jubilee
 
-this is out little blog 
+this is our little blog 
 
 ```
 npm run dev
