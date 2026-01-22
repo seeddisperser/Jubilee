@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 export interface InvoiceData {
   date: string;
@@ -106,9 +107,11 @@ export const InvoiceTemplate = React.forwardRef<HTMLDivElement, InvoiceTemplateP
         <div>
           <h3 className="font-bold mb-4">Thank you</h3>
           <div className="mb-4">
-            <img
+            <Image
               src="/signature.png"
               alt="Signature"
+              width={200}
+              height={64}
               className="h-16"
               onError={(e) => {
                 // If signature image doesn't exist, hide it

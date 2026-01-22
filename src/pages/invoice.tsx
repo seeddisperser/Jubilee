@@ -214,7 +214,7 @@ export default function InvoicePage() {
                 </div>
               ) : (
                 <div className="flex items-center justify-center h-64 text-gray-400">
-                  Click "Preview Invoice" to see your invoice
+                  Click &quot;Preview Invoice&quot; to see your invoice
                 </div>
               )}
             </div>
