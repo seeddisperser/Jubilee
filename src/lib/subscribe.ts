@@ -1,4 +1,3 @@
-// src/pages/api/subscribe.ts
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { addSubscriber } from './setup';
 
